@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/snapX-Website/static/css/main.d96ddfde.css",
+    "main.js": "/snapX-Website/static/js/main.b4cefad8.js",
+    "static/js/787.32d91862.chunk.js": "/snapX-Website/static/js/787.32d91862.chunk.js",
+    "static/media/banner-bg.jpg": "/snapX-Website/static/media/banner-bg.0ffafa27f10c0d14955d.jpg",
+    "index.html": "/snapX-Website/index.html",
+    "main.d96ddfde.css.map": "/snapX-Website/static/css/main.d96ddfde.css.map",
+    "main.b4cefad8.js.map": "/snapX-Website/static/js/main.b4cefad8.js.map",
+    "787.32d91862.chunk.js.map": "/snapX-Website/static/js/787.32d91862.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d96ddfde.css",
+    "static/js/main.b4cefad8.js"
+  ]
+}

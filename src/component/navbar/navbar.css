@@ -1,33 +1,10 @@
-:root {
-    --blue: #00bdfe;
-    --white: #ffffff;
-}
-/*-----------------------------Fonts-----------------------------------*/
-.bg-blue{
-    background-color: var(--blue) !important;
-}
-.bgWhite{
-    background-color: var(--white) !important;
-}
-.colorWhite{
-    color: var(--white) !important;
-}
-.colorBlue{
-    color: var(--blue) !important;
-}
-.fw-400{
-    font-weight: 400;
-}
-/*-----------------------------Border-----------------------------------*/
-.borderBlue{
-    border-color:var(--blue) !important;
-}
 
+/*-----------------------------Fonts-----------------------------------*/
 .padding-nav{
     padding: 2% 7% !important;
 }
 /*-----------------------------Hover-----------------------------------*/
-.btn-sign-in:hover{
+.btnSearchHover:hover{
     color: var(--white) !important;
     background-color: var(--blue)!important;
     border: var(--blue)!important;
@@ -43,6 +20,16 @@
 .pos-fixed{
     position:fixed !important;
 }
-/*.has-sub:hover{
-    active
-}*/
+a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.z-10{
+    z-index: 10;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}

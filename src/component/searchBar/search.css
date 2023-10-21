@@ -1,0 +1,25 @@
+.width55{
+    width: 55% !important;
+}
+.btnSignIn:hover{
+    color: var(--blue) !important;
+    background-color: var(--white)!important;
+    border: 1px var(--blue) solid !important;
+}
+
+.posAbsolute{
+    position: absolute;
+    top: 93%;
+    right: 3%;
+}
+
+@media (max-width: 992px) { .posAbsolute{
+    right: 12%;
+} }
+
+@media (max-width: 867px) { .posAbsolute{
+    right: 8%;
+}
+
+}
+

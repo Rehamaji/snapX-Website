@@ -1,0 +1,23 @@
+img{
+    border-radius: 10px;
+}
+.mtb {
+    margin: 3% 1% !important;
+}
+.top8{
+    top: 8%;
+}
+.width90{
+    width:90% !important;
+}
+.max-width-100 {
+    max-width: 100%;
+    width:800px;
+}
+/*.z-10{
+    z-index: 10;
+}*/
+@media (max-width: 976px) {
+    .pt{
+    padding-top: 15%;
+}}

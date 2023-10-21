@@ -11,3 +11,88 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/*------------------------------------*/
+:root {
+  --blue: #00bdfe;
+  --white: #ffffff;
+  --gray:#afafaf;
+  --lightGray:#f7f7f7;
+  --black:#000000;
+  --Darkblue:#0000FFFF;
+
+}
+
+/*------------------------------------*/
+.colorBlack{
+  color: var(--black) !important;
+  background: transparent;
+}
+.bg-blue{
+  background-color: var(--blue) !important;
+}
+.bgWhite{
+  background-color: var(--white) !important;
+}
+.bgLightGray{
+  background-color: var(--lightGray) !important;
+}
+.colorWhite{
+  color: var(--white) !important;
+}
+.colorBlue{
+  color: var(--blue) !important;
+}
+.colorGray{
+  color: var(--gray) !important;
+}
+/*------------------------------------*/
+.fw-400{
+  font-weight: 400;
+}
+.fw-600{
+  font-weight:600;
+}
+.fw-700{
+  font-weight:700;
+}
+.fs1-4{
+  font-size: 1.4rem;
+}
+.w-90{
+  width: 90% !important;
+}
+
+.borderRadius10{
+  border-radius: 15px !important;
+}
+.posRelative{
+  position: relative;
+}
+
+/*-----------------------------Border-----------------------------------*/
+.borderBlue{
+  border-color:var(--blue) !important;
+}
+.colorBlueOnHover:hover{
+  color: var(--blue) !important;
+}
+.colorDarkBlueOnHover:hover{
+  color: var(--Darkblue) !important;
+}
+.move-text {
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+.move-text:hover {
+  transform: translateX(3px); /* Move the text 1px to the right on hover */
+}
+/*-----------------------------Font-----------------------------------*/
+.fs1{
+  font-size:1rem;
+}
+.w-fit-content {
+  width: fit-content;
+}
+/*-----------------------------Margin-----------------------------------*/
+.mt-10{
+  margin-top:10rem !important;
+}

@@ -1,0 +1,13 @@
+/*-----------------------------Hover-----------------------------------*/
+.btnSearchHover:hover{
+    color: var(--white) !important;
+    background-color: var(--blue)!important;
+    border: var(--blue)!important;
+}
+
+.borderBlue{
+    border-color:var(--blue) !important;
+}
+.colorBlue{
+    color: var(--blue) !important;
+}

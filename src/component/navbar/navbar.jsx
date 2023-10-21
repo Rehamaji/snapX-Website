@@ -7,15 +7,16 @@ import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'; // Replace with the icon you want
 import './navbar.css';
-/*import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-const element = <FontAwesomeIcon icon={faCoffee} />*/
-// eslint-disable-next-line react-hooks/rules-of-hooks
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+import Logo from '../../assets/images/logo.png'; // Use two levels of '../' to go up to the 'src' directory
+
 
 const AllNavbar = () => {
     const [show, setShow] = useState(false);
 
     const showDropdown = (e) => {
-        setShow(!show);
+        setShow(true);
     };
 
     const hideDropdown = (e) => {
@@ -24,35 +25,50 @@ const AllNavbar = () => {
 
     return(
        <div>
-           <Navbar expand="lg" className="bg-body-tertiary pos-fixed w-100">
+           <Navbar expand="lg" className="bg-body-tertiary pos-fixed w-100 z-10">
                <Container>
                    <Navbar.Brand href="#home">
-                       <img src="/assets/images/logo.png" alt="SnapX Photography Template"/>
+                       <img src={Logo} alt="Banner Background" />
                    </Navbar.Brand>
                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                    <Navbar.Collapse id="basic-navbar-nav">
                        <Nav className="mx-auto padding-nav bg-blue color-white mt-1">
-                           <Nav.Link href="#home" className="colorWhite fw-500" >HOME</Nav.Link>
-                           <NavDropdown title="PHOTO & VIDEOS" id="basic-nav-dropdown" className="colorWhite fw-500"  show={show}
+                           <Nav.Link href="#home" className="colorWhite fw-500" >
+                               <Link to="/">Home</Link>
+                           </Nav.Link>
+                           <NavDropdown title="PHOTO & VIDEOS"
+                                        id="basic-nav-dropdown"
+                                        className="colorWhite fw-500"
+                                        show={show}
                                         onMouseEnter={showDropdown}
                                         onMouseLeave={hideDropdown}>
-                               <NavDropdown.Item href="#action/3.1">CONTESTS</NavDropdown.Item>
-                               <NavDropdown.Divider />
-                               <NavDropdown.Item href="#action/3.2">
+
+                               <NavDropdown.Item
+                                   as={Link}
+                                   to="/contests"
+                                   className="colorBlack colorBlueOnHover move-text"
+                                   onMouseEnter={showDropdown} // Show the dropdown on hover
+                                    >CONTESTS</NavDropdown.Item>
+                               <NavDropdown.Divider/>
+                               <NavDropdown.Item
+                                   as={Link} to="./singleContests"
+                                   className="colorBlack colorBlueOnHover move-text"
+                                   onMouseEnter={showDropdown} // Show the dropdown on hover
+                               >
                                    SINGLE CONTEST
                                </NavDropdown.Item>
                            </NavDropdown>
-                           <Nav.Link href="#link" className="colorWhite fw-500">CATEGORIES</Nav.Link>
-                           <Nav.Link href="#link" className="colorWhite fw-500">USERS</Nav.Link>
+                           <Nav.Link as={Link} to="/categories" className="colorWh  ite fw-500">CATEGORIES</Nav.Link>
+                           <Nav.Link as={Link} to="/users" className="colorWhite fw-500">USERS</Nav.Link>
                        </Nav>
                    </Navbar.Collapse>
-                   <Button variant="outline-success borderBlue colorBlue btn-sign-in pe-4 ps-4 pt-1">
+                   <Button variant="outline-success borderBlue colorBlue btn-sign-in pe-4 ps-4 pt-1 btnSearchHover" >
                        <FontAwesomeIcon icon={faUser}/>
-                       Sign In/Up
+                        <span className="fw-600"> Sign In/Up </span>
                     </Button>
                </Container>
-           </Navbar>
+               </Navbar>
        </div>
-    )
+    );
 }
 export default AllNavbar;
